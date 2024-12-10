@@ -14,7 +14,7 @@ const int SWITCH_PIN = 11;
 void setup() {
   pinMode(LED_PIN, OUTPUT);
   // Here we use "INPUT_PULLUP" mode. This uses an internal resistor on the Arduino to
-  // ensure that the switch reads low when off, and high when on.
+  // ensure that the switch reads low when on, and high when off.
   // If you use "INPUT" by accident, you will see the value of the switch change randomly,
   // because when the switch is toggled off, the signal is not pulled to ground.
   pinMode(SWITCH_PIN, INPUT_PULLUP);
